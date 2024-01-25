@@ -29,9 +29,9 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/7e56d907542396289fee4.jpg https://telegra.ph/file/9aa8dd372f4739fe02d85.jpg https://telegra.ph/file/adffc5ce502f5578e2806.jpg https://telegra.ph/file/6937b60bc2617597b92fd.jpg https://telegra.ph/file/09a7abaab340143f9c7e7.jpg https://telegra.ph/file/5a82c4a59bd04d415af1c.jpg https://telegra.ph/file/323986d3bd9c4c1b3cb26.jpg https://telegra.ph/file/b8a82dcb89fb296f92ca0.jpg https://telegra.ph/file/31adab039a85ed88e22b0.jpg https://telegra.ph/file/c0e0f4c3ed53ac8438f34.jpg https://telegra.ph/file/eede835fb3c37e07c9cee.jpg https://telegra.ph/file/e17d2d068f71a9867d554.jpg https://telegra.ph/file/8fb1ae7d995e8735a7c25.jpg https://telegra.ph/file/8fed19586b4aa019ec215.jpg https://telegra.ph/file/8e6c923abd6139083e1de.jpg https://telegra.ph/file/0049d801d29e83d68b001.jpg')).split()
  
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5689200464').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002093953426').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5689200464').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
@@ -45,18 +45,18 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002093953426'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyDeveloper')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'baljeetsingh_11147')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [movie request](https://t.me/baljeetsingh_11147)</b>⚡\n\n🎦 <b>File Name: </b> ➥  {file_caption} \n⚙️ <b>Size: </b><i>{file_size}</i>\n\n                ❤️<b>WE LOVE YOU</b>❤️\n🔥  ↭ <b>Join Now [MoviesAdda™](https://t.me/real_MoviesAdda3)</b> ↭  🔥")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [movie request](https://t.me/baljeetsingh_11147)</b>⚡\n\n🎦 <b>File Name: </b> ➥  {file_caption} \n⚙️ <b>Size: </b><i>{file_size}</i>\n\n                ❤️<b>WE LOVE YOU</b>❤️\n🔥  ↭ <b>Join Now [movie request](https://t.me/baljeetsingh_11147)</b> ↭  🔥")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb Data by: @LazyDeveloper \n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 \n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb Data by: @baljeetsingh_11147 \n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 \n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002093953426')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
@@ -79,13 +79,13 @@ ADMIN_USRNM = environ.get('ADMIN_USRNM','baljeetsingh_1114') # WITHOUT @
 MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','baljeetsingh_11147') # WITHOUT @
 DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','baljeet Singh') # WITHOUT @
 LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','baljeet Singh')  # WITHOUT @ [  add only handle - don't add full url  ] 
-MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "movie request") #[ without @ ]
+MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "baljeetsingh_11147") #[ without @ ]
 
 # Url Shortner
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', '') #Always use website url from api section 
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
-LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'publicearn.com') #Always use website url from api section 
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '7302cc705b1aca0980fd96fd69a528100c482da3')
+LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5689200464').split()]
 lazy_groups = environ.get('LAZY_GROUPS','')
 LAZY_GROUPS = [int(lazy_groups) for lazy_groups in lazy_groups.split()] if lazy_groups else None # ADD GROUP ID IN THIS VARIABLE
 my_users = [int(my_users) if id_pattern.search(my_users) else my_users for my_users in environ.get('MY_USERS', '').split()]
@@ -102,13 +102,13 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "http://{}:{}/".format(FQDN, PORT)
+URL = "https://{https://movie-3-0-ci7h.onrender.com}/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "http://{https://movie-3-0-ci7h.onrender.com}:{https://movie-3-0-ci7h.onrender.com}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'LazyPrincess'))
+name = str(environ.get('name', 'baljeet'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
@@ -118,10 +118,10 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://{}/".format(FQDN)
+    URL = "https://{https://movie-3-0-ci7h.onrender.com}/".format(FQDN)
 else:
-    URL = "http://{}/".format(FQDN)
-BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001987654567")).split())) 
+    URL = "http://{https://movie-3-0-ci7h.onrender.com}/".format(FQDN)
+BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split())) 
 OWNER_USERNAME = "baljeetsingh_1114"
 
 
