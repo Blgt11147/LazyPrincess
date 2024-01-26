@@ -82,10 +82,10 @@ LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','baljeet Singh')  # WITHOUT @ [  a
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "baljeetsingh_11147") #[ without @ ]
 
 # Url Shortner
-URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
+URL_MODE = is_enabled((environ.get("URL_MODE","True")), True)
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'publicearn.com') #Always use website url from api section 
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '7302cc705b1aca0980fd96fd69a528100c482da3')
-LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5689200464').split()]
+LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '').split()]
 lazy_groups = environ.get('LAZY_GROUPS','')
 LAZY_GROUPS = [int(lazy_groups) for lazy_groups in lazy_groups.split()] if lazy_groups else None # ADD GROUP ID IN THIS VARIABLE
 my_users = [int(my_users) if id_pattern.search(my_users) else my_users for my_users in environ.get('MY_USERS', '').split()]
