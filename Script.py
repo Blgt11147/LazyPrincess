@@ -25,6 +25,7 @@ Thanks for thinking about us.\nIt seems that you really love <a href=https://t.m
     SET_CUSTOM_USERNAME_PASSWORD = """"""
 
     NO_VOID_FORMAT_FOUND = "ERROR... <code>{}</code
+    
     UPLOAD_START = "<b>initiating baljeet upload ⚡</b>"
 
     LAZY_UPLOAD_START = """<b>●❤♡ Recieving baljeet File ♡❤●</b>\n\n⏯**File Name:** `{}`"""
